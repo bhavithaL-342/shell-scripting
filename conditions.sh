@@ -8,4 +8,4 @@ if [ $NUM -gt 20 ]; then
 #         echo "yes, num is less than 20"
 else
     echo "no. is not gt 20"
-
+fi 
