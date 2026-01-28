@@ -9,6 +9,7 @@
 # echo "Bhavitha: I'm practicing shell scripting"
 
 
+
 # PERSON1=Lakshmi
 # PERSON2=Bhavitha
 
@@ -27,10 +28,15 @@
 # echo "$PERSON2: I'm practicing shell scripting"
 
 
-echo "Enter username:"
-read USER_NAME
+# echo "Enter username:"
+# read USER_NAME
 
-echo "username is $USER_NAME"
+# echo "username is $USER_NAME"
 
-echo "Enter password:"
-read -s PASSWORD
+# echo "Enter password:"
+# read -s PASSWORD
+
+
+TIMESTAMP=$(date)
+
+echo "script executed at $TIMESTAMP"
