@@ -4,8 +4,8 @@ NUM=25
 
 if [ $NUM -gt 20 ]; then
     echo "yes, num is greater than 20"
-elif [ $NUM -lt 20 ]; then
-        echo "yes, num is less than 20"
+# elif [ $NUM -lt 20 ]; then
+#         echo "yes, num is less than 20"
 else
-    echo "yes, num is equal to 20"
+    echo "no. is not gt 20"
 
