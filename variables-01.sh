@@ -18,10 +18,19 @@
 # echo "$PERSON2: I'm practicing shell scripting"
 
 
-PERSON1=$1
-PERSON2=$2
+# PERSON1=$1
+# PERSON2=$2
 
-echo "$PERSON1: Hi $PERSON2"
-echo "$PERSON2: Hi $PERSON1, How are you"
-echo "$PERSON1: I'm good, what are you doing"
-echo "$PERSON2: I'm practicing shell scripting"
+# echo "$PERSON1: Hi $PERSON2"
+# echo "$PERSON2: Hi $PERSON1, How are you"
+# echo "$PERSON1: I'm good, what are you doing"
+# echo "$PERSON2: I'm practicing shell scripting"
+
+
+echo "Enter username:"
+read USER_NAME
+
+echo "username is $USER_NAME"
+
+echo "Enter password:"
+read -s PASSWORD
