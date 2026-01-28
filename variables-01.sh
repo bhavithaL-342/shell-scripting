@@ -37,6 +37,15 @@
 # read -s PASSWORD
 
 
-TIMESTAMP=$(date)
+# TIMESTAMP=$(date)
+# echo "script executed at $TIMESTAMP"
 
-echo "script executed at $TIMESTAMP"
+STARTTIME=$(date +%s)
+echo "script executed at: $STARTTIME"
+
+sleep 10 
+
+ENDTIME=$(date +%s)
+TOTAL_TIME=$(($STARTTIME-$ENDTIME))
+
+echo "script executed in: $TOTAL_TIME"
