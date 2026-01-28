@@ -9,4 +9,4 @@ echo "Home directory of current user: $HOME"
 echo "PID of the script: $$"
 sleep 100 &
 echo "PID of recently executed background process: $!"
-echo "All args passed to script: $*"  # $* takes all args as one string(so will use $@)
+echo "All args passed to script: $*"  # $* takes all args as one string(so will use $@ in scripts)
