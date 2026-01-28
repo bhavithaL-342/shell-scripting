@@ -46,6 +46,6 @@ echo "script executed at: $STARTTIME"
 sleep 10 
 
 ENDTIME=$(date +%s)
-TOTAL_TIME=$(($STARTTIME-$ENDTIME))
+TOTAL_TIME=$(($ENDTIME-$STARTTIME))
 
 echo "script executed in: $TOTAL_TIME"
