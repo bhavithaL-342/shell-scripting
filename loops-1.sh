@@ -24,6 +24,7 @@ fi
 
 for package in $@ #sudo sh loops.sh nginx mysql nodejs   
 do
+    dnf list installed $package &>> $LOGS_FILE #will say whether the package already installed or not and run echo $?-> if 0 installed else no
     dnf install $package -y &>> $LOGS_FILE
     VALIDATE $? "$package installation"
 done
