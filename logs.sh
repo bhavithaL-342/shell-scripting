@@ -8,15 +8,15 @@ LOGS_FILE="/var/log/shell-script/$0.log"
 
 
 if [ $USERID -ne 0 ]; then
-    echo "Please run this script with root user access"
+    echo "Please run this script with root user access" | tee -a $LOGS_FILE
     exit 1
 fi
 
 VALIDATE(){
 if [ $1 -ne 0 ]; then 
-    echo "$2 is FAILURE"
+    echo "$2 is FAILURE" | tee -a $LOGS_FILE #tee -> prints log/output on screen and in log file, -a is append(without override)
 else 
-    echo "$2 is SUCCESS"
+    echo "$2 is SUCCESS" | tee -a $LOGS_FILE
 fi
 }
 
