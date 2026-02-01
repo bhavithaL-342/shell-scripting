@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e #this will check for errors, if error it will exit
+
 R="\e[31m"
 G="\e[32m"          #-e must to enable colour code
 Y="\e[33m"
@@ -30,7 +32,7 @@ do
     if [ $? -ne 0 ]; then
         echo -e "$package not installed, $Y installing now $N"
         dnf install $package -y &>> $LOGS_FILE
-        VALIDATE $? "$package installation"
+        # VALIDATE $? "$package installation"
     else
         echo -e "$package already installed, $Y skipping $N"
     fi
