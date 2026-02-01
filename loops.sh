@@ -29,7 +29,7 @@ fi
 # dnf install nodejs -y &>> $LOGS_FILE
 # VALIDATE $?, "Installing nodejs"
 
-for package in $@ #sudo sh loops.sh nginx mysql nodejs
+for package in $@ #sudo sh loops.sh nginx mysql nodejs   
 do
     dnf install $package -y 
     VALIDATE $? "$package installation"
