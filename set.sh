@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e #this will check for errors, if error it will exit
+set -e #this will check for errors, if error it will exit, but it won't print log, log in -> sudo less /var/log/shell-script/set.sh log
 
 R="\e[31m"
 G="\e[32m"          #-e must to enable colour code
